@@ -2,12 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  
-  base: '/Cricket-dream-11/', 
+  // If we are on GitHub Actions, use the subfolder, otherwise use root
+  base: process.env.GITHUB_ACTIONS ? '/Cricket-dream-11/' : '/',
   plugins: [
-    react(), 
+    react(),
     tailwindcss(),
   ],
 })
