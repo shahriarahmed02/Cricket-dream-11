@@ -14,9 +14,9 @@ const Banner = ({ handleAddCoins }) => {
                 />
 
             
-                <div className="absolute bottom-8 md:bottom-12">
+                <div className="absolute bottom-0  md:bottom-2 lg:bottom-12">
                     <div className="border border-[#E7FE29]  rounded-xl inline-block">
-                        <button onClick={handleAddCoins} className="btn bg-[#E7FE29] hover:bg-[#e9d524] text-black border-none rounded-xl px-8 py-2 font-bold h-auto min-h-0">
+                        <button onClick={handleAddCoins} className="btn bg-[#E7FE29] hover:bg-[#e9d524] text-black border-none rounded-xl px-3 py-1 font-bold h-auto min-h-0">
                             Claim Free Credit
                         </button>
                     </div>

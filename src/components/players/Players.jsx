@@ -72,7 +72,7 @@ const Players = ({ playerPromise, handleSelectPlayer }) => {
                                     <p className="font-extrabold text-xl text-gray-900">Price: ${player.price}</p>
                                     <button 
                                         onClick={() => handleSelectPlayer(player)}
-                                        className="btn btn-md border-gray-300 bg-white hover:bg-[#29fe82] hover:border-[#E7FE29] font-bold rounded-xl transition-all"
+                                        className="btn btn-md border-gray-300 bg-white hover:bg-[#29fe82] hover:border-[#E7FE29] font-bold text-gray-700 rounded-xl transition-all"
                                     >
                                         Choose Player
                                     </button>

@@ -7,7 +7,7 @@ const Selected = ({ selectedPlayers, handleRemovePlayer, onAddMore }) => {
             <div className="flex flex-col gap-4">
                 {selectedPlayers.length === 0 ? (
                     <div className="text-center py-10 border-1 border-dashed rounded-2xl">
-                        <p className="text-gray-400">No players selected yet!</p>
+                        <p className="text-gray-500">No players selected yet!</p>
                     </div>
                 ) : (
                     selectedPlayers.map((player) => (

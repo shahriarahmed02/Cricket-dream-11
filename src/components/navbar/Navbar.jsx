@@ -2,29 +2,43 @@ import React from 'react';
 import dollar from "../../assets/dollar1.png"
 import logo from "../../assets/Group 1.png"
 
-
 const Navbar = ({ coins }) => {
     return (
-        <div className="navbar bg-base-100/80 sticky top-0 z-50 backdrop-blur-md container mx-auto px-4 py-4">
-            <div className="flex-1">
-               
-                <img src={logo} alt="Cricket Logo" className="w-12 h-12" />
-            </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal px-1 text-gray-600 font-medium hidden md:flex items-center">
-                    <li><a>Home</a></li>
-                    <li><a>Fixture</a></li>
-                    <li><a>Teams</a></li>
-                    <li><a>Schedules</a></li>
+        /* We use fixed and a high z-index to make sure it floats ABOVE the banner */
+        <nav className="fixed top-0 left-0 w-full z-[1000] bg-white/95 backdrop-blur-md shadow-md">
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:px-12">
+                
+                {/* LEFT SIDE: Logo (Working fine) */}
+                <div className="flex-shrink-0">
+                    <img src={logo} alt="Logo" className="w-10 h-10 md:w-16 md:h-16" />
+                </div>
+
+                {/* RIGHT SIDE: We mirror the Logo structure here */}
+                <div className="flex items-center gap-4">
                     
-                    
-                    <div className="ml-4 border border-gray-200 rounded-xl px-4 py-2 flex items-center gap-2 font-bold shadow-sm">
-                        <span>{coins} Coin</span>
-                        <img src={dollar} alt="coin" className="w-5 h-5" />
+                    {/* Desktop Menu: Hidden on mobile so it doesn't push the coin out */}
+                    <ul className="hidden md:flex items-center gap-6 text-gray-600 font-bold list-none">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Fixture</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Schedules</a></li>
+                    </ul>
+
+                    {/* THE COIN: Treated exactly like the logo div */}
+                    <div className="flex-shrink-0 flex items-center gap-2 border-2 border-[#E7FE29] rounded-xl px-3 py-1.5 bg-white shadow-sm">
+                        <span className="font-bold text-sm md:text-base text-black whitespace-nowrap">
+                            {coins.toLocaleString()} Coin
+                        </span>
+                        <img 
+                            src={dollar} 
+                            alt="coin" 
+                            className="w-5 h-5 md:w-6 md:h-6" 
+                        />
                     </div>
-                </ul>
+                </div>
+
             </div>
-        </div>
+        </nav>
     );
 };
 

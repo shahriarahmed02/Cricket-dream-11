@@ -8,7 +8,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2500000,
-    "image": "/player-image/Viratkkholi.webp"
+    "image": "./player-image/Viratkkholi.webp"
   },
   {
     "playerId": 2,
@@ -19,7 +19,7 @@
     "battingStyle": "None",
     "bowlingStyle": "Right-arm fast",
     "price": 2600000,
-    "image": "/player-image/Jaspritbumrah.webp"
+    "image": "./player-image/Jaspritbumrah.webp"
   },
   {
     "playerId": 3,
@@ -30,7 +30,7 @@
     "battingStyle": "Left-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1900000,
-    "image": "/player-image/Abhisek.webp"
+    "image": "./player-image/Abhisek.webp"
   },
   {
     "playerId": 4,
@@ -41,7 +41,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 2200000,
-    "image": "/player-image/Rashid.webp"
+    "image": "./player-image/Rashid.webp"
   },
   {
     "playerId": 5,
@@ -52,7 +52,7 @@
     "battingStyle": "Left-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2400000,
-    "image": "/player-image/TravisHead(5).webp"
+    "image": "./player-image/TravisHead(5).webp"
   },
   {
     "playerId": 6,
@@ -63,7 +63,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1200000,
-    "image": "/player-image/Raza.webp"
+    "image": "./player-image/Raza.webp"
   },
   {
     "playerId": 7,
@@ -74,7 +74,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 2300000,
-    "image": "/player-image/Pandya.webp"
+    "image": "./player-image/Pandya.webp"
   },
   {
     "playerId": 8,
@@ -85,7 +85,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1750000,
-    "image": "/player-image/salt.webp"
+    "image": "./player-image/salt.webp"
   },
   {
     "playerId": 9,
@@ -96,7 +96,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2000000,
-    "image": "/player-image/root.webp"
+    "image": "./player-image/root.webp"
   },
   {
     "playerId": 10,
@@ -107,7 +107,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2100000,
-    "image": "/player-image/brook.webp"
+    "image": "./player-image/brook.webp"
   },
   {
     "playerId": 11,
@@ -118,7 +118,7 @@
     "battingStyle": "None",
     "bowlingStyle": "Left-arm fast",
     "price": 2100000,
-    "image": "/player-image/starc.webp"
+    "image": "./player-image/starc.webp"
   },
   {
     "playerId": 12,
@@ -129,7 +129,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1850000,
-    "image": "/player-image/Darry.webp"
+    "image": "./player-image/Darry.webp"
   },
   {
     "playerId": 13,
@@ -140,7 +140,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1500000,
-    "image": "/player-image/miraz.webp"
+    "image": "./player-image/miraz.webp"
   },
   {
     "playerId": 14,
@@ -151,7 +151,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-arm medium-fast",
     "price": 1600000,
-    "image": "/player-image/azmatullah.webp"
+    "image": "./player-image/azmatullah.webp"
   },
   {
     "playerId": 15,
@@ -162,7 +162,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2200000,
-    "image": "/player-image/Rohit-Sharma.webp"
+    "image": "./player-image/Rohit-Sharma.webp"
   },
   {
     "playerId": 16,
@@ -173,7 +173,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1300000,
-    "image": "/player-image/pathum.webp"
+    "image": "./player-image/pathum.webp"
   },
   {
     "playerId": 17,
@@ -184,7 +184,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 2000000,
-    "image": "/player-image/babar.webp"
+    "image": "./player-image/babar.webp"
   },
   {
     "playerId": 18,
@@ -195,7 +195,7 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1950000,
-    "image": "/player-image/kane-williamson.webp"
+    "image": "./player-image/kane-williamson.webp"
   },
   {
     "playerId": 19,
@@ -206,7 +206,7 @@
     "battingStyle": "Left-Hand-Bat",
     "bowlingStyle": "Slow left-arm orthodox",
     "price": 1800000,
-    "image": "/player-image/Shakib.webp"
+    "image": "./player-image/Shakib.webp"
   },
   {
     "playerId": 20,
@@ -217,6 +217,6 @@
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
     "price": 1400000,
-    "image": "/player-image/zadran.webp"
+    "image": "./player-image/zadran.webp"
   }
 ]
