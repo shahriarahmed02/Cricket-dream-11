@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Banner from './components/banner/Banner';
 import Players from './components/players/Players';
 import Selected from './components/selected/Selected';
+import Footer from "./components/footer/Footer";
 
 // Fetching player data
 const playerPromise = fetch("./data.json").then((res) => res.json());
@@ -12,56 +13,37 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   const [isActive, setIsActive] = useState({ available: true });
 
-  // 1. Add Coins Logic
+  // ... (Your existing logic for AddCoins, SelectPlayer, RemovePlayer)
   const handleAddCoins = () => {
     setCoins(prev => prev + 6000000);
     alert("6,000,000 Credits added to your account!");
   };
 
-  // 2. Select Player Logic
   const handleSelectPlayer = (player) => {
     const isExist = selectedPlayers.find(p => p.playerId === player.playerId);
-    
-    if (isExist) {
-        alert("Player already selected!");
-        return;
-    }
-
-    if (selectedPlayers.length >= 11) {
-        alert("Team is full! Limit is 11 players.");
-        return;
-    }
-
-    if (coins < player.price) {
-        alert("Not enough coins! Click 'Claim Free Credit'.");
-        return;
-    }
+    if (isExist) { alert("Player already selected!"); return; }
+    if (selectedPlayers.length >= 11) { alert("Team is full! Limit is 11 players."); return; }
+    if (coins < player.price) { alert("Not enough coins! Click 'Claim Free Credit'."); return; }
 
     setCoins(coins - player.price);
     setSelectedPlayers([...selectedPlayers, player]); 
     alert(`${player.playerName} added to your squad!`);
   };
 
-  // 3. Remove Player Logic
   const handleRemovePlayer = (player) => {
     const remaining = selectedPlayers.filter(p => p.playerId !== player.playerId);
     setSelectedPlayers(remaining);
-    setCoins(coins + player.price); // Refund logic
+    setCoins(coins + player.price); 
     alert(`${player.playerName} removed. Credits refunded!`);
   };
 
   return (
-    <div className="min-h-screen bg-white pb-20">
-      {/* Navbar sits outside the container to stay truly full-width and sticky */}
+    <div className="min-h-screen bg-white"> {/* Removed pb-20 because Footer adds its own margin */}
       <Navbar coins={coins} />
 
-      {/* Main Content Wrapper */}
-      <main className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
-        
-        {/* Banner Section */}
+      <main className="max-w-7xl mx-auto px-4 md:px-8 pt-6 pb-36"> {/* Added pb-36 to give room for the overlapping newsletter */}
         <Banner handleAddCoins={handleAddCoins} />
 
-        {/* Toggle Section: Responsive Heading and Buttons */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 my-10 px-2">
           <h2 className="text-xl text-gray-600 md:text-2xl font-bold">
             {isActive.available ? "Available Players" : `Selected (${selectedPlayers.length}/11)`}
@@ -81,7 +63,6 @@ function App() {
           </div>
         </div>
 
-        {/* Dynamic Section: Players List or Selected List */}
         <section>
           {isActive.available ? (
             <Suspense fallback={
@@ -99,8 +80,10 @@ function App() {
             />
           )}
         </section>
-
       </main>
+
+      {/* 2. Footer sits outside main to span the whole screen width */}
+      <Footer />
     </div>
   );
 }
